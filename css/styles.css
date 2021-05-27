@@ -1,0 +1,306 @@
+/*--------- NAV BAR -----------*/
+header{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.637);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-nav {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    top: 15px;
+    margin-left: 80px;
+    position: relative;
+}
+
+.logo-svg-nav {
+    fill: cornsilk;
+    width: 100%;
+    height: auto;
+}
+
+.nav-menu{
+    display: inline-block;
+    top: 40px; 
+    position: relative;
+}
+
+header nav .nav-menu a {
+    text-decoration: none;
+    color: cornsilk;
+    margin-right: 15px;
+}
+
+header nav .social {
+    display: inline-block;
+    top: 38px;
+    position: relative;
+    margin-right: 80px;
+    
+}
+
+header nav .social a {
+    text-decoration: none;
+    margin-right: 10px;
+
+}
+
+header nav .social svg {
+    text-decoration: none;
+    fill: cornsilk;
+    width: 20px;
+    height: auto;
+}
+
+/*--------- NAV BAR -----------*/
+
+/*--------- INICIO -----------*/
+
+.inicio {
+    width: 100%;
+    height: 700px;
+    background: url(../img/Banner.png);
+    background-size: cover;
+    background-position: 0% 100%;
+    text-align: center;
+}
+
+.logo-frente {
+    top: 150px;
+    position: relative;
+    display: inline-block;
+    width: 350px;
+    
+    
+}
+.logo-svg {
+    z-index: 10000;
+    fill: rgba(255, 248, 220, 0.712);
+    width: 100%;
+    height: auto;
+}
+
+/*--------- INICIO -----------*/
+
+/*--------- SERVICIOS ---------*/
+
+.servicios {
+    width: 100%;
+    height: 620px;
+    background-color: rgb(34, 33, 33);  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.servicios .mezcla {
+    
+    width: 280px;
+    height: 400px;
+    background: rgb(228, 223, 205);
+    margin-right: 20px;
+    margin-top: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.servicios .podcast {
+
+    width: 280px;
+    height: 400px;
+    background: rgb(228, 223, 205);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.servicios .beatmaking {
+
+    width: 280px;
+    height: 400px;
+    background: rgb(228, 223, 205);
+    margin-left: 20px;
+    margin-top: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/*--------- SERVICIOS ---------*/
+
+/*--------- SOBRE MÍ ---------*/
+
+.about {
+    width: 100%;
+    height: 700px;
+    background-color: rgb(34, 33, 33);    
+}
+
+.about .sobre-mi {
+    display: inline-block;
+    width: 500px;
+    height: auto;
+    margin-left: 80px ;
+    margin-top: 150px;
+    
+}
+
+.about .sobre-mi h3 {
+
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 5px;
+    color: cornsilk;
+    margin-bottom: 20px;
+    border-bottom: 3px solid cornsilk;
+
+}
+
+.about .sobre-mi p {
+
+    margin-top: 20px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: cornsilk;
+
+}
+
+.about .foto-perfil {
+    float: right;
+    width: 24%;
+    height: auto;
+    margin-right: 80px;
+}
+
+.foto-perfil-img {
+    width: 100%;
+    height: auto;
+
+}
+
+/*--------- SOBRE MÍ ---------*/
+
+/*--------- PROYECTOS ---------*/
+
+.proyectos {
+    width: 100%;
+    height: 820px;
+    background-color: rgb(34, 33, 33);  
+
+}
+
+.proyectos h3 {
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 5px;
+    color: cornsilk;
+    margin-bottom: 80px;
+    border-bottom: 3px solid cornsilk;
+}
+
+.proyectos h4 {
+
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: cornsilk;
+    margin-bottom: 40px;
+    border-bottom: 3px solid cornsilk;
+
+}
+
+.proyectos .clientes {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.proyectos .clientes .artepunto-cliente .cuadroimg {
+    
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+
+}
+
+.proyectos .clientes .artepunto-cliente p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: cornsilk;
+}
+
+.proyectos .personal {
+    display: flex;
+}
+
+.proyectos .personal .hotel-proyecto {
+    width: 200px;
+    height: 200px;
+}
+
+.proyectos .personal .hotel-proyecto p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: cornsilk;
+}
+
+.proyectos .personal .hotel-proyecto .hotel-img {
+    width: 100%;
+    height: auto;
+}
+
+.proyectos .personal .remix-proyecto {
+    width: 200px;
+    height: 200px;
+}
+
+.proyectos .personal .remix-proyecto p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: cornsilk;
+}
+
+.proyectos .personal .remix-proyecto .adults-img {
+    width: 100%;
+    height: auto;
+}
+
+/*--------- PROYECTOS ---------*/
+
+/*--------- CONTACTO ---------*/
+
+.contacto {
+    width: 100%;
+    height: 820px;
+    background-color: rgb(202, 197, 175);
+}
+
+.contacto h3 {
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 5px;
+    color: rgb(34, 33, 33); 
+    margin-bottom: 80px;
+    border-bottom: 3px solid rgb(34, 33, 33);
+}
