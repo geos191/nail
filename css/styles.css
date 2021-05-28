@@ -1,5 +1,6 @@
 /*--------- NAV BAR -----------*/
 header{
+    z-index: 100000;
     position: fixed;
     width: 100%;
     height: 80px;
@@ -158,7 +159,7 @@ header nav .social svg {
 }
 
 .about .sobre-mi h3 {
-
+    
     text-transform: uppercase;
     font-size: 40px;
     letter-spacing: 5px;
@@ -196,12 +197,15 @@ header nav .social svg {
 
 .proyectos {
     width: 100%;
-    height: 820px;
+    height: 900px;
     background-color: rgb(34, 33, 33);  
 
 }
 
 .proyectos h3 {
+    padding-top: 40px;
+    width: 100%;
+    height: 80px;
     text-align: center;
     display: block;
     text-transform: uppercase;
@@ -213,13 +217,14 @@ header nav .social svg {
 }
 
 .proyectos h4 {
-
+    display: inline-block;
     text-transform: uppercase;
     font-size: 30px;
     letter-spacing: 3px;
     color: cornsilk;
     margin-bottom: 40px;
     border-bottom: 3px solid cornsilk;
+    margin-left: 80px;
 
 }
 
@@ -228,12 +233,15 @@ header nav .social svg {
     margin-bottom: 40px;
 }
 
+.proyectos .clientes .artepunto-cliente {
+    margin-left: 200px;
+}
+
 .proyectos .clientes .artepunto-cliente .cuadroimg {
     
     width: 200px;
     height: 200px;
-    background-color: aqua;
-
+    background-color: rgb(202, 197, 175);
 }
 
 .proyectos .clientes .artepunto-cliente p {
@@ -251,6 +259,7 @@ header nav .social svg {
 .proyectos .personal .hotel-proyecto {
     width: 200px;
     height: 200px;
+    margin-left: 200px;
 }
 
 .proyectos .personal .hotel-proyecto p {
@@ -269,6 +278,7 @@ header nav .social svg {
 .proyectos .personal .remix-proyecto {
     width: 200px;
     height: 200px;
+    margin-left: 20px;
 }
 
 .proyectos .personal .remix-proyecto p {
@@ -295,6 +305,10 @@ header nav .social svg {
 }
 
 .contacto h3 {
+
+    padding-top: 40px;
+    width: 100%;
+    height: 80px;
     text-align: center;
     display: block;
     text-transform: uppercase;
