@@ -1,3 +1,12 @@
+body {
+    background-color: rgb(34, 33, 33);
+}
+.container {
+    width: 100%;
+    max-width: 1780px;
+    min-width: 1280px;
+    margin: auto;
+}
 /*--------- NAV BAR -----------*/
 header{
     z-index: 100000;
@@ -7,8 +16,10 @@ header{
     background-color: rgba(0, 0, 0, 0.637);
 }
 
-header nav {
+header .nav-bar {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -16,7 +27,7 @@ header nav {
     width: 70px;
     height: 70px;
     display: inline-block;
-    top: 15px;
+    top: 12px;
     margin-left: 80px;
     position: relative;
 }
@@ -28,37 +39,55 @@ header nav {
 }
 
 .nav-menu{
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     top: 40px; 
     position: relative;
+    text-transform: uppercase;
 }
 
-header nav .nav-menu a {
+header .nav-bar .nav-menu a {
     text-decoration: none;
     color: cornsilk;
     margin-right: 15px;
 }
 
-header nav .social {
-    display: inline-block;
-    top: 38px;
+header .nav-bar .nav-menu a:hover {
+    color: rgb(204, 197, 169);
+}
+
+header .nav-bar .social {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    top: 10px;
     position: relative;
     margin-right: 80px;
     
 }
 
-header nav .social a {
+header .nav-bar .social a {
     text-decoration: none;
     margin-right: 10px;
-
 }
 
-header nav .social svg {
+header .nav-bar .social svg {
     text-decoration: none;
     fill: cornsilk;
     width: 20px;
     height: auto;
 }
+
+header .nav-bar .social svg:hover {
+    fill: rgb(204, 197, 169);
+}
+
+
 
 /*--------- NAV BAR -----------*/
 
@@ -98,7 +127,8 @@ header nav .social svg {
     background-color: rgb(34, 33, 33);  
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
@@ -107,9 +137,9 @@ header nav .social svg {
     width: 280px;
     height: 400px;
     background: rgb(228, 223, 205);
-    margin-right: 20px;
-    margin-top: 50px;
-    border: 1px solid black;
+    margin-left: 200px;
+    
+    border: 0.3px solid black;
     border-radius: 5px;
     text-align: center;
 }
@@ -119,10 +149,9 @@ header nav .social svg {
     width: 280px;
     height: 400px;
     background: rgb(228, 223, 205);
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 50px;
-    border: 1px solid black;
+    
+    
+    border: 0.3px solid black;
     border-radius: 5px;
     text-align: center;
 }
@@ -132,9 +161,9 @@ header nav .social svg {
     width: 280px;
     height: 400px;
     background: rgb(228, 223, 205);
-    margin-left: 20px;
-    margin-top: 50px;
-    border: 1px solid black;
+    margin-right: 200px;
+    
+    border: 0.3px solid black;
     border-radius: 5px;
     text-align: center;
 }
