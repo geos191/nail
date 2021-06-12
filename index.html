@@ -141,14 +141,40 @@
         </div>
     </section>
     
-    <section class=" container contacto">
+    <section class="container contacto">
 
         <h3>Contacto</h3>
 
-        <form action="">
-            
-        </form>
+        <div class="contact-wrapper">
+            <form class="contact-form" action="">
+                <p>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="Nombre" id="nombre">
+                </p>
 
+                <p>
+                    <label for="telefono">Teléfono</label>
+                    <input type="number" name="Telefono" id="telefono">
+                </p>
+
+                <p>
+                    <label for="correo">Correo</label>
+                    <input type="email" name="Correo" id="correo">
+                </p>
+
+                <p>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="Mensaje" id="mensaje" cols="22" rows="3"></textarea>
+                </p>
+
+                <p class="block">
+                    <button>
+                        Send
+                    </button>
+                </p>
+                
+            </form>
+        </div>
     </section>
 
     <footer class="pie-pagina">
