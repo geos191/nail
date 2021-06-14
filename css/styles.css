@@ -47,6 +47,7 @@ header .nav-bar {
     top: 40px; 
     position: relative;
     text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 header .nav-bar .nav-menu a {
@@ -352,7 +353,7 @@ header .nav-bar .social svg:hover {
 .contacto .contact-wrapper {
     color: cornsilk;
     display: inline-block;
-    box-shadow: 0 0 20px 0 rgba(153, 1, 255, .3);
+    box-shadow: 0 0 20px 0 rgba(153, 1, 255, .4);
 
 }
 
@@ -365,6 +366,7 @@ header .nav-bar .social svg:hover {
 .contact-form {
     
     background-color: #222222;
+    text-align: left;
 
 }
 
@@ -375,11 +377,20 @@ form {
 
 }
 
-.contact-form form p {
+.contact-wrapper .contact-form .block {
+    grid-column: 1 / 3;
+}
+
+.contact-form p {
 
     margin: 0px;
     padding: 1em;
 
+}
+
+.contact-wrapper .contact-form label {
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .contact-form button,
@@ -402,6 +413,15 @@ form {
     padding: 1em;
     color: #222222;
 }
+
+.contact-wrapper .contact-form button:hover,
+.contact-wrapper .contact-form button:focus {
+background: rgb(156, 146, 106);
+transition: background-color 0.7s ease-out;
+outline: 0;
+}
+
+
 /*--------- CONTACTO ---------*/
 
 /*--------- PIE DE PAGINA ---------*/
