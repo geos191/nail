@@ -155,11 +155,13 @@ header .nav-bar .social svg:hover {
 .servicios .mezcla {
     width: 280px;
     height: 400px;
+    position: relative;
     background: rgb(228, 223, 205);
     margin-left: 200px;
     border: 0.3px solid rgba(0, 0, 0, 0.74);
     border-radius: 5px;
     text-align: center;
+    cursor: pointer;
 }
 
 .servicios .mezcla {
@@ -167,14 +169,63 @@ header .nav-bar .social svg:hover {
     background-size: cover;
 }
 
+.servicios .servicios-wrap .mezcla .capa-mezcla {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(75, 0, 145, 0.274);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center; 
+}
+
+.servicios .servicios-wrap .mezcla:hover > .capa-mezcla {
+    opacity: 1;
+    visibility: visible;
+
+}
+.servicios .servicios-wrap .mezcla .capa-mezcla h4{
+
+    text-transform: uppercase;
+    color: cornsilk;
+    letter-spacing: 1.5px;
+    margin-bottom: 240px;
+    transition: all 400ms ease-out;
+
+}
+
+.servicios .servicios-wrap .mezcla:hover > .capa-mezcla h4 {
+    margin-top: 130px;
+    margin-bottom: 30px;
+    
+
+}
+
+.servicios .servicios-wrap .mezcla .capa-mezcla p{
+
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+    color: cornsilk;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    transition: all 400ms ease-out;
+
+}
+
+/*---QUEDA PENDIENTE MODIFICAR CODIGO PARA AGREGAR TRANSICIÓN "SCALE" A LA IMAGEN--*/
+   
 .servicios .podcast {
 
     width: 280px;
     height: 400px;
+    position: relative;
     background: rgb(228, 223, 205);
     border: 0.3px solid rgba(0, 0, 0, 0.747);
     border-radius: 5px;
     text-align: center;
+    cursor: pointer;
 }
 
 .servicios .podcast {
@@ -183,22 +234,113 @@ header .nav-bar .social svg:hover {
     background-position: 25% 0%;
 }
 
+.servicios .servicios-wrap .podcast .capa-podcast {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(75, 0, 145, 0.274);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center; 
+}
+
+.servicios .servicios-wrap .podcast:hover > .capa-podcast {
+    opacity: 1;
+    visibility: visible;
+
+}
+.servicios .servicios-wrap .podcast .capa-podcast h4{
+
+    text-transform: uppercase;
+    color: cornsilk;
+    letter-spacing: 1.5px;
+    margin-bottom: 240px;
+    transition: all 400ms ease-out;
+
+}
+
+.servicios .servicios-wrap .podcast:hover > .capa-podcast h4 {
+    margin-top: 130px;
+    margin-bottom: 30px;
+    
+
+}
+
+.servicios .servicios-wrap .podcast .capa-podcast p{
+
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+    color: cornsilk;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    transition: all 400ms ease-out;
+
+}
+
 .servicios .beatmaking {
 
     width: 280px;
     height: 400px;
     background: rgb(228, 223, 205);
     margin-right: 200px;
-    
+    position: relative;
     border: 0.3px solid rgba(0, 0, 0, 0.74);
     border-radius: 5px;
     text-align: center;
+    cursor: pointer;
 }
 
 .servicios .beatmaking {
     background: url(../img/Beat.jpg);
     background-size: cover;
     background-position: 35% 0%;
+}
+
+.servicios .servicios-wrap .beatmaking .capa-beatmaking {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(75, 0, 145, 0.274);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center; 
+}
+
+.servicios .servicios-wrap .beatmaking:hover > .capa-beatmaking {
+    opacity: 1;
+    visibility: visible;
+
+}
+.servicios .servicios-wrap .beatmaking .capa-beatmaking h4{
+
+    text-transform: uppercase;
+    color: cornsilk;
+    letter-spacing: 1.5px;
+    margin-bottom: 240px;
+    transition: all 400ms ease-out;
+
+}
+
+.servicios .servicios-wrap .beatmaking:hover > .capa-beatmaking h4 {
+    margin-top: 130px;
+    margin-bottom: 30px;
+    
+
+}
+
+.servicios .servicios-wrap .beatmaking .capa-beatmaking p{
+
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+    color: cornsilk;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    transition: all 400ms ease-out;
+
 }
 
 /*--------- SERVICIOS ---------*/
