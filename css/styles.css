@@ -1,12 +1,3 @@
-body {
-    background-color: #222222;
-}
-.container {
-    width: 100%;
-    max-width: 1780px;
-    min-width: 1280px;
-    margin: auto;
-}
 /*--------- NAV BAR -----------*/
 header{
     z-index: 100000;
@@ -90,7 +81,7 @@ header .nav-bar .social svg:hover {
 
 
 
-/*--------- NAV BAR -----------*/
+/*--------- FIN NAV BAR -----------*/
 
 /*--------- INICIO -----------*/
 
@@ -117,8 +108,78 @@ header .nav-bar .social svg:hover {
     width: 100%;
     height: auto;
 }
+/*INICIO RESPONSIVE*/
+@media all and (min-width: 320px){
+    .container {
+        width: 100%;
+        max-width: 767px;
+        margin: auto;
+    }
+    .inicio{
+        background-size: 785px 1133px;
+        background-repeat: no-repeat;
+        background-position: 0% 100%;
+    }
+}
 
-/*--------- INICIO -----------*/
+@media all and (min-width: 768px){
+    .container {
+        width: 100%;
+        max-width: 1024px;
+        margin: auto;
+    }
+
+    .inicio{
+        background-size: 1016px 1467px;
+        background-repeat: no-repeat;
+        background-position: 0% 100%;
+    }
+}
+
+@media all and (min-width: 1024px){
+    .container {
+        width: 100%;
+        max-width: 1280px;
+        margin: auto;
+    }
+
+    .inicio{
+        background-size: 1234px 1781px;
+        background-repeat: no-repeat;
+        background-position: 0% 100%;
+    }
+}
+
+@media all and (min-width: 1280px){
+    .container {
+        width: 100%;
+        max-width: 1680px;
+        margin: auto;
+    }
+
+    .inicio{
+        background-size: 1680px 2318px;
+        background-repeat: no-repeat;
+        background-position: 0% 100%;
+    }
+}
+
+@media all and (min-width: 1680px){
+    .container {
+        width: 100%;
+        max-width: none;
+        margin: auto;
+    }
+
+    .inicio{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0% 100%;
+    }
+}
+/*FIN INICIO RESPONSIVE*/
+
+/*--------- FIN INICIO -----------*/
 
 /*--------- SERVICIOS ---------*/
 
@@ -153,23 +214,33 @@ header .nav-bar .social svg:hover {
 
 
 .servicios .mezcla {
+    display: flex;
     width: 280px;
     height: 400px;
     position: relative;
-    background: rgb(228, 223, 205);
     margin-left: 200px;
-    border: 0.3px solid rgba(0, 0, 0, 0.74);
     border-radius: 5px;
     text-align: center;
     cursor: pointer;
+    overflow: hidden;
 }
 
-.servicios .mezcla {
-    background: url(../img/Mezcla.jpg);
-    background-size: cover;
+.servicios .mezcla figure {
+    width: 280px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
 }
+
+.servicios .mezcla figure .img-mezcla {
+    position: relative;
+    width: auto;
+    height: 100%;
+}
+
 
 .servicios .servicios-wrap .mezcla .capa-mezcla {
+    
     position: absolute;
     width: 100%;
     height: 100%;
@@ -214,24 +285,36 @@ header .nav-bar .social svg:hover {
 
 }
 
+.servicios .servicios-wrap .mezcla figure:hover > .img-mezcla {
+    transform: scale(1.3);
+}
+
+
 /*---QUEDA PENDIENTE MODIFICAR CODIGO PARA AGREGAR TRANSICIÓN "SCALE" A LA IMAGEN--*/
    
 .servicios .podcast {
-
+    display: flex;
     width: 280px;
     height: 400px;
     position: relative;
-    background: rgb(228, 223, 205);
-    border: 0.3px solid rgba(0, 0, 0, 0.747);
     border-radius: 5px;
     text-align: center;
     cursor: pointer;
+    overflow: hidden;
 }
 
-.servicios .podcast {
-    background: url(../img/Podcast.jpg);
-    background-size: cover;
-    background-position: 25% 0%;
+.servicios .podcast figure {
+    width: 280px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.servicios .podcast figure .img-podcast {
+    position: relative;
+    width: auto;
+    height: 100%;
+    
 }
 
 .servicios .servicios-wrap .podcast .capa-podcast {
@@ -279,23 +362,34 @@ header .nav-bar .social svg:hover {
 
 }
 
-.servicios .beatmaking {
-
-    width: 280px;
-    height: 400px;
-    background: rgb(228, 223, 205);
-    margin-right: 200px;
-    position: relative;
-    border: 0.3px solid rgba(0, 0, 0, 0.74);
-    border-radius: 5px;
-    text-align: center;
-    cursor: pointer;
+.servicios .servicios-wrap .podcast figure:hover > .img-podcast {
+    transform: scale(1.3);
 }
 
 .servicios .beatmaking {
-    background: url(../img/Beat.jpg);
-    background-size: cover;
-    background-position: 35% 0%;
+    display: flex;
+    width: 280px;
+    height: 400px;
+    position: relative;
+    margin-right: 200px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.servicios .beatmaking figure{
+    width: 280px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.servicios .beatmaking figure .img-beat {
+    position: relative;
+    width: auto;
+    height: 100%;
+    
 }
 
 .servicios .servicios-wrap .beatmaking .capa-beatmaking {
@@ -343,7 +437,11 @@ header .nav-bar .social svg:hover {
 
 }
 
-/*--------- SERVICIOS ---------*/
+.servicios .servicios-wrap .beatmaking figure:hover > img {
+    transform: scale(1.3);
+}
+
+/*--------- FIN SERVICIOS ---------*/
 
 /*--------- SOBRE MÍ ---------*/
 
