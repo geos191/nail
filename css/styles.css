@@ -15,10 +15,10 @@ header .nav-bar {
 }
 
 .logo-nav {
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
     display: inline-block;
-    top: 12px;
+    top: 15px;
     margin-left: 80px;
     position: relative;
     order:0;
@@ -89,18 +89,21 @@ header .nav-bar .social svg:hover {
     .nav-bar .nav-menu{
         visibility: hidden;
     }
+    .logo-nav{
+        margin-left: 15px;
+    }
 }
 
 @media all and (min-width: 768px){
     
     .nav-bar .social{
         visibility: hidden;
-        
-        
     }
     .nav-bar .nav-menu{
         visibility: visible;
-        
+    }
+    .logo-nav{
+        margin-left: 30px;
     }
 }
 
@@ -108,11 +111,12 @@ header .nav-bar .social svg:hover {
     
     .nav-bar .social{
         visibility: visible;
-        
     }
     .nav-bar .nav-menu{
-        visibility: visible;
-        
+        visibility: visible;   
+    }
+    .logo-nav{
+        margin-left: 80px;
     }
 }
 
@@ -791,7 +795,7 @@ outline: 0;
         padding: 3em;
     }
 }
-.
+
 
 
 /*--------- CONTACTO ---------*/
