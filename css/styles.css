@@ -41,6 +41,8 @@ header .nav-bar {
     letter-spacing: 2px;
 }
 
+
+
 header .nav-bar .nav-menu a {
     text-decoration: none;
     color: cornsilk;
@@ -96,8 +98,21 @@ header .nav-bar .desplegable .menu-btn{
         display: none;
     }
     .nav-bar .nav-menu{
-        display: none;
+        left: 0px;
+        position: fixed;
+        width: 100%;
+        height: calc(80% - 80px);
+        top: -100vh;
+        background: rgba(0, 0, 0, 0.637);
+        flex-direction: column;
+        text-align: center;
+        transition: all .4s;
     }
+
+    header .nav-bar .show {
+        top: 80px;
+    }
+
     .logo-nav{
         margin-left: 20px;
     }
@@ -114,8 +129,15 @@ header .nav-bar .desplegable .menu-btn{
         display: none;
     }
     .nav-bar .nav-menu{
+        position: relative;
         display: flex;
+        flex-direction: row;
+        width: auto;
+        height: auto;
+        top: 40px;
         margin-right: 30px;
+        background: none;
+        transition: none;
     }
     .logo-nav{
         margin-left: 40px;
