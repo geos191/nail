@@ -534,9 +534,6 @@ header .nav-bar .desplegable .menu-btn{
 }
 
 @media all and (min-width: 320px) {
-
-    
-
     .servicios {
         height: 800px;
     }
@@ -589,6 +586,59 @@ header .nav-bar .desplegable .menu-btn{
     }
 }
 
+@media all and (min-width: 768px) {
+    .servicios {
+        height: 700px;
+    }
+
+    .servicios h3 {
+        height: 80px;
+    }
+    .servicios .servicios-wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .servicios .mezcla {
+        display: flex;
+        width: 280px;
+        height: 400px;
+        position: relative;
+        margin-left: 0px;
+        border-radius: 5px;
+        text-align: center;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    .servicios .podcast {
+        display: flex;
+        width: 280px;
+        height: 400px;
+        margin-top: 0px;
+        position: relative;
+        border-radius: 5px;
+        text-align: center;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    .servicios .beatmaking {
+        display: flex;
+        width: 280px;
+        height: 400px;
+        margin-top: 0px;
+        position: relative;
+        margin-right: 0px;
+        border-radius: 5px;
+        text-align: center;
+        cursor: pointer;
+        overflow: hidden;
+    }
+}
+
 /*--------- FIN SERVICIOS ---------*/
 
 /*--------- SOBRE MÍ ---------*/
@@ -607,7 +657,7 @@ header .nav-bar .desplegable .menu-btn{
     height: auto;
     margin-left: 80px ;
     margin-top: 150px;
-    
+    position: relative;
 }
 
 .about .sobre-mi h3 {
@@ -631,10 +681,8 @@ header .nav-bar .desplegable .menu-btn{
 }
 
 .about .foto-perfil {
-    
-    width: 24%;
+    width: 320px;
     height: auto;
-    margin-right: 80px;
 }
 
 .foto-perfil-img {
@@ -661,14 +709,29 @@ header .nav-bar .desplegable .menu-btn{
     .about .foto-perfil {
         width: 320px;
         height: auto;
-        margin-right: 0px;
     }
 }
 
 @media all and (min-width: 768px){
-    .about .sobre-mi{
-        width: 500px;
+    .about{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 700px;
+        background-color: #222222;  
+        justify-content: space-around;
     }
+    .about .sobre-mi{
+        display: inline-block;
+        width: 500px;
+        height: auto;
+        position: relative;
+    }
+    .about .foto-perfil {
+        width: 380px;
+        height: auto;
+    }
+    
 }
 
 /*--------- SOBRE MÍ ---------*/
