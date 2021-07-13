@@ -105,6 +105,7 @@ header .nav-bar .desplegable .menu-btn{
         top: -100vh;
         background: rgba(0, 0, 0, 0.637);
         flex-direction: column;
+        justify-content: space-around;
         text-align: center;
         transition: all .4s;
     }
@@ -382,8 +383,6 @@ header .nav-bar .desplegable .menu-btn{
 }
 
 
-/*---QUEDA PENDIENTE MODIFICAR CODIGO PARA AGREGAR TRANSICIÓN "SCALE" A LA IMAGEN--*/
-   
 .servicios .podcast {
     display: flex;
     width: 280px;
@@ -603,7 +602,7 @@ header .nav-bar .desplegable .menu-btn{
 
     .servicios .mezcla {
         display: flex;
-        width: 280px;
+        width: 220px;
         height: 400px;
         position: relative;
         margin-left: 0px;
@@ -615,7 +614,7 @@ header .nav-bar .desplegable .menu-btn{
 
     .servicios .podcast {
         display: flex;
-        width: 280px;
+        width: 220px;
         height: 400px;
         margin-top: 0px;
         position: relative;
@@ -627,7 +626,7 @@ header .nav-bar .desplegable .menu-btn{
 
     .servicios .beatmaking {
         display: flex;
-        width: 280px;
+        width: 220px;
         height: 400px;
         margin-top: 0px;
         position: relative;
@@ -636,6 +635,22 @@ header .nav-bar .desplegable .menu-btn{
         text-align: center;
         cursor: pointer;
         overflow: hidden;
+    }
+}
+
+@media all and (min-width: 1024px) {
+    .servicios .mezcla {
+        width: 280px;
+        height: 400px;
+    }
+    .servicios .podcast {
+        width: 280px;
+        height: 400px;
+    }
+    .servicios .beatmaking {
+        width: 280px;
+        height: 400px;
+       
     }
 }
 
