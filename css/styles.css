@@ -1,3 +1,6 @@
+p, h3, a {
+    font-family: 'Roboto Slab', serif;
+}
 /*--------- NAV BAR -----------*/
 header{
     z-index: 100000;
@@ -135,7 +138,7 @@ header .nav-bar .desplegable .menu-btn{
         flex-direction: row;
         width: auto;
         height: auto;
-        top: 40px;
+        top: 10px;
         margin-right: 30px;
         background: none;
         transition: none;
@@ -399,6 +402,7 @@ header .nav-bar .desplegable .menu-btn{
     height: 400px;
     position: relative;
     overflow: hidden;
+    
 }
 
 .servicios .podcast figure .img-podcast {
@@ -623,6 +627,9 @@ header .nav-bar .desplegable .menu-btn{
         cursor: pointer;
         overflow: hidden;
     }
+    .servicios .podcast figure .img-podcast {
+        right: 80px;
+    }
 
     .servicios .beatmaking {
         display: flex;
@@ -646,6 +653,9 @@ header .nav-bar .desplegable .menu-btn{
     .servicios .podcast {
         width: 280px;
         height: 400px;
+    }
+    .servicios .podcast figure .img-podcast {
+        right: 45px;
     }
     .servicios .beatmaking {
         width: 280px;
@@ -698,12 +708,13 @@ header .nav-bar .desplegable .menu-btn{
 .about .foto-perfil {
     width: 320px;
     height: auto;
+    
 }
 
 .foto-perfil-img {
     width: 100%;
     height: auto;
-
+    border-radius: 5px;
 }
 
 /*---SOBRE MÍ RESPONSIVE---*/
